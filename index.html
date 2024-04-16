@@ -3,38 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- My Style & Script -->
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/script.js"></script>
 
     <title>GabriDg Developer Web Page</title>
 </head>
 <body>
     <div id="content">
-
         <header>
             <div>
-                <img src="imgs/37.webp" alt="logo" id="logo">
+                <img src="datas/37.webp" alt="logo" id="logo">
             </div>
             <nav>
                 <ul>
                     <li class="link">
-                        <a href="">Profilo GitHub</a>
+                        <a class="splash-link" href="https://github.com/Gabridg" class="button">Profilo GitHub</a>
                     </li>
                     <li class="link">
-                        <a href="">Profilo Instagram</a>
+                        <a class="splash-link" href="https://www.instagram.com/gabridgdeveloper/" class="button">Profilo Instagram</a>
                     </li>
                     <li class="link">
-                        <a href="">Progetti pubblici</a>
+                        <a class="splash-link" href="https://github.com/Gabridg?tab=repositories" class="button">Progetti pubblici</a>
                     </li>
                     <li class="link">
-                        <a href="">Competenze</a>
+                        <a class="splash-link" href="https://www.linkedin.com/in/gabriele-del-guerzo-4a1038254/details/skills/" class="button">Competenze</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main></main>
     </div>
+
+    <div id="div-out">
+        <button id="outlook">Mi ami? Io da impazzire...</button>
+    </div>
+
+    <div id="showed-text">
+
+    </div>
+    <div id="any" style="display: none;"></div>
+    <div id="phrase" style="display: none;"></div>
+    <div id="heart">
+        <video id="videoPlayer" controls width="100%" height="80%" style="display: none;">
+            <source src="datas/video-love.mp4" type="video/mp4">
+        </video>
+        <audio id="audioPlayer" style="display: none;">
+            <source src="datas/music-love.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+
     <div id="matrix-container"></div>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
