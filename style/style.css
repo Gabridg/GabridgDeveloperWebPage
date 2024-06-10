@@ -9,8 +9,66 @@ body{
     font-weight: 600;
     font-style: normal;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
 #logo{
     font-family: "Gwendolyn", cursive;
     font-weight: 700;
     font-style: normal;
+}
+#logo span{
+    vertical-align: 30px;
+    font-size: 30px;
+}
+#logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.hidden {
+    display: none;
+}
+#burger-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+#burger-list {
+    list-style: none;
+    padding-top: 100px;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-color: #444;
+    width: 200px;
+    height: 100vh;
+    border: 1px solid #333;
+    z-index: -1;
+}
+#burger-list li:hover{
+    background-color: #555;
+}
+
+#burger-list li {
+    border-bottom: 1px solid #555;
+    padding: 25px 12px;
+}
+
+#burger-list li:last-child {
+    border-bottom: none;
+}
+
+#burger-list a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+.fa-x{
+    font-size: 30px;
+    cursor: pointer;
 }
