@@ -26,4 +26,31 @@ ics.addEventListener('click', function() {
   main.classList.remove('hidden');
   main.classList.add('visible');
 });
+
+const phrases = ["Full Stack Developer.", "UX Designer.", "Videogame Enthusiast.", "MotorSport Enthusiast.", "Dad."];
+const typingText = document.getElementById('typing-text');
+let currentPhraseIndex = 0;
+
+function typePhrase(phrase) {
+  typingText.style.width = '0'; // Reset the width to start typing animation
+  typingText.textContent = phrase;
+  typingText.classList.remove('typing-effect');
+  
+  // Force reflow to restart animation
+  void typingText.offsetWidth;
+  
+  typingText.classList.add('typing-effect');
+}
+function nextPhrase() {
+  currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+  typePhrase(phrases[currentPhraseIndex]);
+}
+
+typingText.addEventListener('animationend', function() {
+  // Delay before starting to type the next phrase
+  setTimeout(nextPhrase, 1500);
+});
+
+// Start the first phrase
+typePhrase(phrases[currentPhraseIndex]);
 });
