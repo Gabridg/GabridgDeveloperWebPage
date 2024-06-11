@@ -36,6 +36,9 @@ header{
     font-size: 30px;
     cursor: pointer;
 }
+#burger-icon:hover{
+    color: #0f0;
+}
 #burger-list {
     list-style: none;
     padding-top: 100px;
@@ -52,7 +55,9 @@ header{
 #burger-list li:hover{
     background-color: #555;
 }
-
+#burger-list li a:hover{
+    color: #0f0;
+}
 #burger-list li {
     border-bottom: 1px solid #555;
     padding: 25px 12px;
@@ -71,4 +76,7 @@ header{
 .fa-x{
     font-size: 30px;
     cursor: pointer;
+}
+.fa-x:hover{
+    color: #0f0;
 }
