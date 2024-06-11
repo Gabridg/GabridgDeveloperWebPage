@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
   const main = document.getElementById('main');
 
 
-  burgerIcon.addEventListener('click', function() {
-    list.classList.remove('hidden');
-    list.classList.add('visible');
-    ics.classList.remove('hidden');
-    ics.classList.add('visible');
-    burgerIcon.classList.add('hidden');
-    burgerIcon.classList.remove('visible');
-    main.classList.remove('visible');
-    main.classList.add('hidden');
+burgerIcon.addEventListener('click', function() {
+  list.classList.remove('hidden');
+  list.classList.add('visible');
+  ics.classList.remove('hidden');
+  ics.classList.add('visible');
+  burgerIcon.classList.add('hidden');
+  burgerIcon.classList.remove('visible');
+  main.classList.remove('visible');
+  main.classList.add('hidden');
 });
 
 ics.addEventListener('click', function() {
@@ -27,7 +27,7 @@ ics.addEventListener('click', function() {
   main.classList.add('visible');
 });
 
-const phrases = ["Full Stack Developer.", "UX Designer.", "Videogame Enthusiast.", "MotorSport Enthusiast.", "Dad."];
+const phrases = ["Full Stack Developer.", "UX Designer.", "Videogame Enthusiast.", "MotorSport Enthusiast.", "Father."];
 const typingText = document.getElementById('typing-text');
 let currentPhraseIndex = 0;
 
